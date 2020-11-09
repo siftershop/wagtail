@@ -21,21 +21,21 @@ except ImportError:
 
 install_requires = [
     "Django>=2.2,<3.2",
-    "django-modelcluster>=5.1,<6.0",
+    "django-modelcluster>=5.0,<6.0",
     "django-taggit>=1.0,<2.0",
     "django-treebeard>=4.2.0,<5.0",
     "djangorestframework>=3.11.1,<4.0",
     "django-filter>=2.2,<3.0",
     "draftjs_exporter>=2.1.5,<3.0",
-    "Pillow>=4.0.0,<9.0.0",
+    "Pillow>=4.0.0,<8.0.0",
     "beautifulsoup4>=4.8,<4.9",
     "html5lib>=0.999,<2",
+    "Unidecode>=0.04.14,<2.0",
     "Willow>=1.4,<1.5",
     "requests>=2.11.1,<3.0",
     "l18n>=2018.5",
     "xlsxwriter>=1.2.8,<2.0",
     "tablib[xls,xlsx]>=0.14.0",
-    "anyascii>=0.1.5",
 ]
 
 # Testing dependencies
@@ -43,20 +43,18 @@ testing_extras = [
     # Required for running the tests
     'python-dateutil>=2.2',
     'pytz>=2014.7',
-    'elasticsearch>=5.0,<6.0',
+    'elasticsearch>=1.0.0,<3.0',
     'Jinja2>=2.8,<3.0',
-    'boto3>=1.16,<1.17',
+    'boto3>=1.4,<1.5',
     'freezegun>=0.3.8',
     'openpyxl>=2.6.4',
-    'Unidecode>=0.04.14,<2.0',
 
     # For coverage and PEP8 linting
     'coverage>=3.7.0',
     'flake8>=3.6.0',
-    'isort==5.6.4',  # leave this pinned - it tends to change rules between patch releases
+    'isort==4.2.5',
     'flake8-blind-except==0.1.1',
     'flake8-print==2.0.2',
-    'doc8==0.8.1',
 
     # For templates linting
     'jinjalint>=0.5',
@@ -71,8 +69,8 @@ testing_extras = [
 
 # Documentation dependencies
 documentation_extras = [
-    'pyenchant>=3.1.1,<4',
-    'sphinxcontrib-spelling>=5.4.0,<6',
+    'pyenchant==1.6.8',
+    'sphinxcontrib-spelling>=2.3.0',
     'Sphinx>=1.5.2',
     'sphinx-autobuild>=0.6.0',
     'sphinx_rtd_theme>=0.1.9',
